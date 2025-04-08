@@ -1,8 +1,15 @@
-C:\php{
+{
     "name": "msi/server_practic",
     "description": "Simple mvc framework",
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
 }
