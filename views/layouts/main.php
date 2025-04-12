@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head><title>DEBUG LAYOUT</title></head>
+<head></head>
 <body>
     <div><?php echo $content ?? 'NO CONTENT'; ?></div>
 </div>
