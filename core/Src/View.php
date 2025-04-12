@@ -22,11 +22,12 @@ class View
     private function getRoot(): string
     {
         global $app;
-        $root = $app->settings->getRootPath();
-        $path = $app->settings->getViewsPath();
 
-        return $_SERVER['DOCUMENT_ROOT'] . $root . $path;
+        $root = $app->settings->path['views'] ?? 'views';
+
+        return realpath(__DIR__ . '/../../' . $root);
     }
+
 
     //Путь до основного файла с шаблоном сайта
     private function getPathToMain(): string
@@ -47,19 +48,17 @@ class View
 
         if (file_exists($this->getPathToMain()) && file_exists($path)) {
 
-            //Импортирует переменные из массива в текущую таблицу символов
             extract($data, EXTR_PREFIX_SAME, '');
-
-            //Включение буферизации вывода
             ob_start();
             require $path;
-            //Помещаем буфер в переменную и очищаем его
             $content = ob_get_clean();
 
-            //Возвращаем собранную страницу
-            return require($this->getPathToMain());
+            ob_start();                        // начинаем буферизацию
+            require $this->getPathToMain();   // подключаем шаблон
+            return ob_get_clean();            // возвращаем его как строку
         }
-        throw new Exception('Error render');
+
+        throw new \Exception('Error render');
     }
 
     public function __toString(): string
