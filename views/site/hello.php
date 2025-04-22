@@ -1,1 +1,1 @@
-<p><?php echo $message ?? 'NO MESSAGE'; ?></p>
+<h2><?= $message ?? ''; ?></h2>

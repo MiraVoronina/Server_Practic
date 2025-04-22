@@ -1,11 +1,31 @@
 <?php
-//Путь до директории с конфигурационными файлами
+
+// Путь до директории с конфигурационными файлами
 const DIR_CONFIG = '/../config';
 
-//Подключение автозагрузчика composer
+// Подключение автозагрузчика composer
 require_once __DIR__ . '/../vendor/autoload.php';
 
-//Функция, возвращающая массив всех настроек приложения
+// Инициализация Eloquent (Capsule)
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+$capsule = new Capsule;
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => 'localhost',
+    'database'  => 'DB',
+    'username'  => 'MSI',
+    'password'  => '',
+    'charset'   => 'utf8',
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]);
+
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
+
+// Функция, возвращающая массив всех настроек приложения
 function getConfigs(string $path = DIR_CONFIG): array
 {
     $settings = [];
@@ -21,4 +41,3 @@ function getConfigs(string $path = DIR_CONFIG): array
 require_once __DIR__ . '/../routes/web.php';
 
 return new Src\Application(new Src\Settings(getConfigs()));
-
