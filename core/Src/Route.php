@@ -3,7 +3,7 @@
 namespace Src;
 
 use Error;
-
+use Src\Request;
 class Route
 {
     private static array $routes = [];
@@ -44,4 +44,11 @@ class Route
 
         call_user_func([new $class, $action]);
     }
+    public function index(Request $request): string
+    {
+        $posts = Post::where('id', $request->id)->get();
+        return (new View())->render('site.post', ['posts' => $posts]);
+    }
+
 }
+
