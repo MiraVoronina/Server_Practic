@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Model;
+namespace Model;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Post extends Model
+class Post
 {
-    use HasFactory;
-    public $timestamps = false;
+    public static function all(): array
+    {
+        // временный пример — можно подключить БД позже
+        return [
+            ['title' => 'Пример поста', 'content' => 'Это пример содержимого']
+        ];
+    }
 }

@@ -1,23 +1,27 @@
 {
-    "name": "mira/server-practic",
-    "description": "simple mvc framework",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mira",
-            "email": "voroninaslava23@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^7.4 || ^8.0",
-        "illuminate/database": "^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Src\\": "core/Src/",
-            "App\\": "app/"
-        }
+  "name": "msi/vdagyif-m5",
+  "description": "MVC project",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "msi",
+      "email": "your@email.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "illuminate/database": "^8.0",
+    "illuminate/events": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "core/Src/",
+      "": "app/"
+    }
+  },
+  "config": {
+    "preferred-install": "source"
+  }
 }

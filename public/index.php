@@ -1,9 +1,15 @@
 <?php
-//Включаем запрет на неявное преобразование типов
 declare(strict_types=1);
+spl_autoload_register(function ($class) {
+    $path = '../' . str_replace('\\', '/', $class) . '.php';
+    if (file_exists($path)) {
+        require_once $path;
+    } else {
+        throw new Error("Autoload failed: $path not found");
+    }
+});
 
 try {
-    //Создаем экземпляр приложения и запускаем его
     $app = require_once __DIR__ . '/../core/bootstrap.php';
     $app->run();
 } catch (\Throwable $exception) {

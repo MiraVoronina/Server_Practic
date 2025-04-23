@@ -28,10 +28,23 @@ class Settings
 
     public function getViewsPath(): string
     {
-        return '/' . $this->path['views'] ?? '';
+        return '/' . ($this->path['views'] ?? '');
     }
+
     public function getDbSetting(): array
     {
-        return $this->db ?? [];
+        $path = dirname(__DIR__, 2) . '/config/db.php';
+
+        if (!file_exists($path)) {
+            throw new \Error("Файл конфигурации базы данных не найден: $path");
+        }
+
+        $settings = require $path;
+
+        if (!is_array($settings)) {
+            throw new \Error("Файл конфигурации базы данных не вернул массив");
+        }
+
+        return $settings;
     }
 }

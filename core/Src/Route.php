@@ -4,6 +4,7 @@ namespace Src;
 
 use Error;
 use Src\Request;
+
 class Route
 {
     private static array $routes = [];
@@ -21,34 +22,57 @@ class Route
         }
     }
 
-    public function start(): void
+    public static function start()
     {
-        $path = explode('?', $_SERVER['REQUEST_URI'])[0];
-        $path = substr($path, strlen(self::$prefix) + 1);
+        $uri = $_GET['uri'] ?? '/';
 
-        if (!array_key_exists($path, self::$routes)) {
-            throw new Error('This path does not exist');
+        if (!isset(self::$routes[$uri])) {
+            throw new \Error("Route not found: $uri");
         }
 
-        $class = self::$routes[$path][0];
-        $action = self::$routes[$path][1];
+        $route = self::$routes[$uri];
 
-        if (!class_exists($class)) {
-            throw new Error('This class does not exist');
+        if (is_array($route)) {
+            [$class, $method] = $route;
+
+            if (!class_exists($class)) {
+                throw new \Error("Class $class does not exist");
+            }
+
+            $controller = new $class();
+            if (!method_exists($controller, $method)) {
+                throw new \Error("Method $method does not exist in $class");
+            }
+
+            $request = $_SERVER['REQUEST_METHOD'] === 'POST' ? (object)['method' => 'POST', 'all' => $_POST] : (object)['method' => 'GET'];
+            $response = $controller->$method($request);
+
+            if (is_string($response)) {
+                echo $response;
+            }
+            return;
         }
 
-        if (!method_exists($class, $action)) {
-            throw new Error('This method does not exist');
+        if (!class_exists($route)) {
+            throw new \Error("This class does not exist");
         }
 
-
-        call_user_func([new $class, $action]);
+        $page = new $route();
+        $page->render();
     }
-    public function index(Request $request): string
+
+    public function redirect(string $url): void
     {
-        $posts = Post::where('id', $request->id)->get();
-        return (new View())->render('site.post', ['posts' => $posts]);
+        header('Location: ' . $this->getUrl($url));
     }
 
+    public function getUrl(string $url): string
+    {
+        return self::$prefix . '/' . trim($url, '/');
+    }
+
+    public function __construct(string $prefix = '')
+    {
+        self::setPrefix($prefix);
+    }
 }
-
