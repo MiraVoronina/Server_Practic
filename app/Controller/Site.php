@@ -1,74 +1,68 @@
 <?php
 
-namespace App\Controller;
+namespace Controller;
 
-use Model\Post;
 use Src\View;
-use Model\User;
+use Src\Request;
 use Src\Auth\Auth;
-
 
 class Site
 {
-    public function index(): string
+    public function index(Request $request): string
     {
-        $posts = Post::all();
-        return (new View())->render('site.post', ['posts' => $posts]);
+        return (new View())->render('site.index');
     }
 
-    public function hello(): string
-    {
-        return new View('site.hello', ['message' => 'hello working']);
-    }
-    public function signup(Request $request): string
-    {
-        if ($request->method==='POST' && User::create($request->all())){
-            return new View('site.signup', ['message'=>'Вы успешно зарегистрированы']);
-        }
-        return new View('site.signup');
-    }
     public function login(Request $request): string
     {
-        //Если просто обращение к странице, то отобразить форму
         if ($request->method === 'GET') {
-            return new View('site.login');
+            return (new View())->render('site.login');
         }
-        //Если удалось аутентифицировать пользователя, то редирект
+
         if (Auth::attempt($request->all())) {
             app()->route->redirect('/hello');
         }
-        //Если аутентификация не удалась, то сообщение об ошибке
-        return new View('site.login', ['message' => 'Неправильные логин или пароль']);
+
+        return (new View())->render('site.login', ['message' => 'Неверный логин или пароль']);
+    }
+
+    public function signup(Request $request): string
+    {
+        if ($request->method === 'POST' && \Model\User::create($request->all())) {
+            app()->route->redirect('/login');
+        }
+
+        return (new View())->render('site.signup');
     }
 
     public function logout(): void
     {
         Auth::logout();
-        app()->route->redirect('/hello');
-    }
-    public function students(): void
-    {
-        $students = \Model\Student::all();
-        (new \Src\View('site', 'students', ['students' => $students]))->render();
-    }
-    public function disciplines(): void
-    {
-        $disciplines = \Model\Discipline::all();
-        (new \Src\View('site', 'disciplines', ['disciplines' => $disciplines]))->render();
-    }
-    public function schedule(): void
-    {
-        $schedule = \Model\Schedule::all();
-        (new \Src\View('site', 'schedule', ['schedule' => $schedule]))->render();
-    }
-    public function report(): void
-    {
-        $attendance = \Model\Attendance::all();
-        $performance = \Model\Performance::all();
-        (new \Src\View('site', 'report', [
-            'attendance' => $attendance,
-            'performance' => $performance
-        ]))->render();
+        app()->route->redirect('/login');
     }
 
+    public function hello(Request $request): string
+    {
+        return (new View())->render('site.hello');
+    }
+
+    public function home(Request $request): string
+    {
+        return (new View())->render('site.home');
+    }
+
+    public function students(Request $request): string
+    {
+        return (new View())->render('site.students');
+    }
+
+    public function schedule(Request $request): string
+    {
+        return (new View())->render('site.schedule');
+    }
+
+    public function grades(Request $request): string
+    {
+        return (new View())->render('site.grades');
+    }
 }

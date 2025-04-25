@@ -1,8 +1,8 @@
 <?php
-// app/Model/Discipline.php
-class Discipline {
+// app/Model/Group.php
+class Group {
     private $conn;
-    private $table_name = "disciplines";
+    private $table_name = "groups";
 
     public function __construct($db) {
         $this->conn = $db;

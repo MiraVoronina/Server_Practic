@@ -2,7 +2,7 @@
 
 namespace Src;
 
-use Error;
+use Exception;
 
 class Settings
 {
@@ -18,33 +18,21 @@ class Settings
         if (array_key_exists($key, $this->_settings)) {
             return $this->_settings[$key];
         }
-        throw new Error('Accessing a non-existent property');
+        throw new \Exception('Accessing a non-existent property');
     }
 
     public function getRootPath(): string
     {
-        return $this->path['root'] ? '/' . $this->path['root'] : '';
+        return isset($this->_settings['root']) ? '/' . $this->_settings['root'] : '';
     }
 
     public function getViewsPath(): string
     {
-        return '/' . ($this->path['views'] ?? '');
+        return '/' . $this->_settings['path']['views'] ?? 'views';
     }
-
     public function getDbSetting(): array
     {
-        $path = dirname(__DIR__, 2) . '/config/db.php';
-
-        if (!file_exists($path)) {
-            throw new \Error("Файл конфигурации базы данных не найден: $path");
-        }
-
-        $settings = require $path;
-
-        if (!is_array($settings)) {
-            throw new \Error("Файл конфигурации базы данных не вернул массив");
-        }
-
-        return $settings;
+        return $this->db ?? [];
     }
 }
+?>

@@ -1,27 +1,28 @@
 {
-  "name": "msi/vdagyif-m5",
-  "description": "MVC project",
-  "type": "project",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "msi",
-      "email": "your@email.com"
+    "name": "mira/vdagyif-m5",
+    "description": "simple mvc freamework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mira",
+            "email": "voroninaslava23@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "illuminate/database": "10.x-dev",
+        "illuminate/events": "10.x-dev",
+        "nikic/fast-route": "^2.0@dev"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "Controller\\": "app/Controller/",
+            "Model\\": "app/Model/",
+            "Middlewares\\": "app/Middlewares/"
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": "^7.4 || ^8.0",
-    "illuminate/database": "^8.0",
-    "illuminate/events": "^8.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Src\\": "core/Src/",
-      "": "app/"
-    }
-  },
-  "config": {
-    "preferred-install": "source"
-  }
 }

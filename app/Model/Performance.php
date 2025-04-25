@@ -6,13 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Performance extends Model
 {
-    protected $table = 'успеваемость';
-    protected $primaryKey = 'ID_успеваемости';
+    protected $table = 'performance';
     public $timestamps = false;
 
     protected $fillable = [
-        'ID_студента',
-        'ID_дисциплины',
-        'Оценка'
+        'schedule_id',
+        'student_id',
+        'type',
+        'grade',
+        'hours'
     ];
 }

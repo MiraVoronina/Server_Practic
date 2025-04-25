@@ -2,13 +2,12 @@
 
 namespace Model;
 
-class Post
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Post extends Model
 {
-    public static function all(): array
-    {
-        // временный пример — можно подключить БД позже
-        return [
-            ['title' => 'Пример поста', 'content' => 'Это пример содержимого']
-        ];
-    }
+    use HasFactory;
+
+    public $timestamps = false; // Отключаем временные метки
 }

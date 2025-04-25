@@ -1,18 +1,26 @@
 <?php
+// app/Model/Attendance.php
+class Attendance {
+    private $conn;
+    private $table_name = "attendance";
 
-namespace Model;
+    public function __construct($db) {
+        $this->conn = $db;
+    }
 
-use Illuminate\Database\Eloquent\Model;
+    public function create($student_id, $schedule_id, $status) {
+        $query = "INSERT INTO " . $this->table_name . " SET student_id=:student_id, schedule_id=:schedule_id, status=:status";
+        $stmt = $this->conn->prepare($query);
 
-class Attendance extends Model
-{
-    protected $table = 'посещаемость';
-    protected $primaryKey = 'ID_посещаемости';
-    public $timestamps = false;
+        $stmt->bindParam(':student_id', $student_id);
+        $stmt->bindParam(':schedule_id', $schedule_id);
+        $stmt->bindParam(':status', $status);
 
-    protected $fillable = [
-        'ID_студента',
-        'ID_расписания',
-        'Статус'
-    ];
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
 }
+?>

@@ -18,23 +18,19 @@ class View
         $this->data = $data;
     }
 
-    //Полный путь до директории с представлениями
     private function getRoot(): string
     {
         global $app;
         $root = $app->settings->getRootPath();
         $path = $app->settings->getViewsPath();
-
         return $_SERVER['DOCUMENT_ROOT'] . $root . $path;
     }
 
-    //Путь до основного файла с шаблоном сайта
     private function getPathToMain(): string
     {
         return $this->root . $this->layout;
     }
 
-    //Путь до текущего шаблона
     private function getPathToView(string $view = ''): string
     {
         $view = str_replace('.', '/', $view);
@@ -46,25 +42,28 @@ class View
         $path = $this->getPathToView($view);
 
         if (file_exists($this->getPathToMain()) && file_exists($path)) {
+            extract($data, EXTR_SKIP);
 
-            //Импортирует переменные из массива в текущую таблицу символов
-            extract($data, EXTR_PREFIX_SAME, '');
-
-            //Включение буферизации вывода
+            // Получаем контент из шаблона
             ob_start();
             require $path;
-            //Помещаем буфер в переменную и очищаем его
             $content = ob_get_clean();
 
-            //Возвращаем собранную страницу
-            return require($this->getPathToMain());
+            // Подключаем layout
+            ob_start();
+            include $this->getPathToMain();  // $content будет использован там
+            return ob_get_clean();
         }
-        throw new Exception('Error render');
+
+        throw new \Exception('Error render: шаблон не найден');
     }
 
     public function __toString(): string
     {
-        return $this->render($this->view, $this->data);
+        try {
+            return $this->render($this->view, $this->data);
+        } catch (\Throwable $e) {
+            return 'Ошибка отображения: ' . $e->getMessage();
+        }
     }
-
 }

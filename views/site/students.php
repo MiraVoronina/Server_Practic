@@ -1,20 +1,27 @@
 <h1>Список студентов</h1>
-
-<table border="1" cellpadding="8">
+<table>
+    <thead>
     <tr>
         <th>ID</th>
-        <th>ФИО</th>
-        <th>Пол</th>
-        <th>Дата рождения</th>
-        <th>ID группы</th>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Отчество</th>
+        <th>Группа</th>
+        <th>Адрес</th>
+        <th>Статус</th>
     </tr>
+    </thead>
+    <tbody>
     <?php foreach ($students as $student): ?>
         <tr>
-            <td><?= $student->ID_студента ?></td>
-            <td><?= $student->ФИО ?></td>
-            <td><?= $student->Пол ?></td>
-            <td><?= $student->Дата_рождения ?></td>
-            <td><?= $student->ID_группы ?></td>
+            <td><?= $student->id ?></td>
+            <td><?= $student->last_name ?></td>
+            <td><?= $student->first_name ?></td>
+            <td><?= $student->middle_name ?></td>
+            <td><?= $student->group_id ?></td>
+            <td><?= $student->address ?></td>
+            <td><?= $student->status ?></td>
         </tr>
     <?php endforeach; ?>
+    </tbody>
 </table>

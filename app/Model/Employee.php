@@ -4,17 +4,18 @@ namespace Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class Employee extends Model
 {
-    protected $table = 'students';
+    protected $table = 'employees';
     public $timestamps = false;
 
     protected $fillable = [
         'first_name',
         'last_name',
         'middle_name',
-        'group_id',
-        'address',
-        'status'
+        'login',
+        'password',
+        'phone',
+        'position_id',
     ];
 }

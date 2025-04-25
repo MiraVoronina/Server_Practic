@@ -6,25 +6,6 @@ const DIR_CONFIG = '/../config';
 // Подключение автозагрузчика composer
 require_once __DIR__ . '/../vendor/autoload.php';
 
-// Инициализация Eloquent (Capsule)
-use Illuminate\Database\Capsule\Manager as Capsule;
-
-$capsule = new Capsule;
-
-$capsule->addConnection([
-    'driver'    => 'mysql',
-    'host'      => 'localhost',
-    'database'  => 'DB',
-    'username'  => 'MSI',
-    'password'  => '',
-    'charset'   => 'utf8',
-    'collation' => 'utf8_unicode_ci',
-    'prefix'    => '',
-]);
-
-$capsule->setAsGlobal();
-$capsule->bootEloquent();
-
 // Функция, возвращающая массив всех настроек приложения
 function getConfigs(string $path = DIR_CONFIG): array
 {
@@ -38,13 +19,17 @@ function getConfigs(string $path = DIR_CONFIG): array
     return $settings;
 }
 
+// Подключаем маршруты
 require_once __DIR__ . '/../routes/web.php';
-$app = new Src\Application(new Src\Settings(getConfigs()));
 
-//Функция возвращает глобальный экземпляр приложения
+// СОЗДАЁМ глобальный объект $app
+$app = new \Src\Application(new \Src\Settings(getConfigs()));
+
+// Глобальная функция, возвращающая $app
 function app() {
     global $app;
     return $app;
 }
 
+// Возвращаем объект (опционально, если require возвращает)
 return $app;

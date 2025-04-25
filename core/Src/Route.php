@@ -3,76 +3,99 @@
 namespace Src;
 
 use Error;
-use Src\Request;
+use Src\Traits\SingletonTrait;
+use FastRoute\RouteCollector;
+use FastRoute\RouteParser\Std;
+use FastRoute\DataGenerator\MarkBased;
+use FastRoute\Dispatcher\MarkBased as Dispatcher;
 
 class Route
 {
-    private static array $routes = [];
-    private static string $prefix = '';
+    use SingletonTrait;
 
-    public static function setPrefix($value)
+    private string $currentRoute = '';
+    private array|string $currentHttpMethod = 'GET';
+    private string $prefix = '';
+    private RouteCollector $routeCollector;
+
+    public static function add(array|string $httpMethod, string $route, array $action): self
     {
-        self::$prefix = $value;
+        // Приводим одиночное значение к массиву
+        $methods = is_array($httpMethod) ? $httpMethod : [$httpMethod];
+
+        foreach ($methods as $method) {
+            self::single()->routeCollector->addRoute($method, $route, $action);
+        }
+
+        // Сохраняем только один метод (первый), для логики middleware
+        self::single()->currentHttpMethod = $methods[0];
+        self::single()->currentRoute = $route;
+
+        return self::single();
     }
 
-    public static function add(string $route, array $action): void
+    public static function group(string $prefix, callable $callback): void
     {
-        if (!array_key_exists($route, self::$routes)) {
-            self::$routes[$route] = $action;
-        }
+        self::single()->routeCollector->addGroup($prefix, $callback);
+        Middleware::single()->group($prefix, $callback);
     }
 
-    public static function start()
+    private function __construct()
     {
-        $uri = $_GET['uri'] ?? '/';
+        $this->routeCollector = new RouteCollector(new Std(), new MarkBased());
+    }
 
-        if (!isset(self::$routes[$uri])) {
-            throw new \Error("Route not found: $uri");
-        }
-
-        $route = self::$routes[$uri];
-
-        if (is_array($route)) {
-            [$class, $method] = $route;
-
-            if (!class_exists($class)) {
-                throw new \Error("Class $class does not exist");
-            }
-
-            $controller = new $class();
-            if (!method_exists($controller, $method)) {
-                throw new \Error("Method $method does not exist in $class");
-            }
-
-            $request = $_SERVER['REQUEST_METHOD'] === 'POST' ? (object)['method' => 'POST', 'all' => $_POST] : (object)['method' => 'GET'];
-            $response = $controller->$method($request);
-
-            if (is_string($response)) {
-                echo $response;
-            }
-            return;
-        }
-
-        if (!class_exists($route)) {
-            throw new \Error("This class does not exist");
-        }
-
-        $page = new $route();
-        $page->render();
+    public function setPrefix(string $value = ''): self
+    {
+        $this->prefix = $value;
+        return $this;
     }
 
     public function redirect(string $url): void
     {
         header('Location: ' . $this->getUrl($url));
+        exit;
     }
 
     public function getUrl(string $url): string
     {
-        return self::$prefix . '/' . trim($url, '/');
+        return $this->prefix . $url;
     }
 
-    public function __construct(string $prefix = '')
+    public function middleware(...$middlewares): self
     {
-        self::setPrefix($prefix);
+        Middleware::single()->add($this->currentHttpMethod, $this->currentRoute, $middlewares);
+        return $this;
+    }
+
+    public function start(): void
+    {
+        $httpMethod = $_SERVER['REQUEST_METHOD'];
+        $uri = $_SERVER['REQUEST_URI'];
+
+        if (false !== $pos = strpos($uri, '?')) {
+            $uri = substr($uri, 0, $pos);
+        }
+
+        $uri = rawurldecode($uri);
+        $uri = substr($uri, strlen($this->prefix));
+
+        $dispatcher = new Dispatcher($this->routeCollector->getData());
+
+        $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
+        switch ($routeInfo[0]) {
+            case Dispatcher::NOT_FOUND:
+                throw new Error('NOT_FOUND');
+            case Dispatcher::METHOD_NOT_ALLOWED:
+                throw new Error('METHOD_NOT_ALLOWED');
+            case Dispatcher::FOUND:
+                $handler = $routeInfo[1];
+                $vars = array_values($routeInfo[2]);
+                $vars[] = Middleware::single()->runMiddlewares($httpMethod, $uri);
+                $class = $handler[0];
+                $action = $handler[1];
+                call_user_func([new $class, $action], ...$vars);
+                break;
+        }
     }
 }

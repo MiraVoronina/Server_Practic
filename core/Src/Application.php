@@ -13,27 +13,17 @@ class Application
     private Settings $settings;
     private Route $route;
     private Capsule $dbManager;
-    private ?Auth $auth = null; // теперь может быть null
-
+    private Auth $auth;
 
     public function __construct(Settings $settings)
     {
-        // Привязываем класс со всеми настройками приложения
         $this->settings = $settings;
-        $this->auth = new Auth();
-        // Привязываем маршрут
-        $this->route = new Route($this->settings->getRootPath());
-
-        // Настройка базы данных
+        $this->route = Route::single()->setPrefix($this->settings->getRootPath());
         $this->dbManager = new Capsule();
-        $this->dbRun();
+        $this->auth = new $this->settings->app['auth'];
 
-        // Если в конфиге указаны классы для авторизации — инициализируем
-        if (!empty($this->settings->app['auth']) && !empty($this->settings->app['identity'])) {
-            $this->auth = new $this->settings->app['auth'];
-            $identity = $this->settings->app['identity'];
-            $this->auth::init(new $identity);
-        }
+        $this->dbRun();
+        $this->auth::init(new $this->settings->app['identity']);
     }
 
     public function __get($key)
@@ -59,7 +49,6 @@ class Application
 
     public function run(): void
     {
-        require_once '../routes/web.php';
-        Route::start();
+        $this->route->start();
     }
 }
