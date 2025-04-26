@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFFDF8;
+  color: #444;
+  font-size: 14px;
+}
+
+.header {
+  background-color: #F2E9E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.dekanat, .employees {
+  padding: 40px;
+}
+
+.dekanat h2, .employees h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.dekanat-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #F7F6F2;
+  padding: 30px;
+  border: 1px solid #E0DCD7;
+}
+
+.dekan-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dekan-info p {
+  margin-bottom: 10px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  margin-top: 20px;
+}
+
+.image.rectangle {
+  width: 250px;
+  height: 250px;
+  background-color: #E8E8F0;
+}
+
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.employee {
+  text-align: center;
+  width: 150px;
+}
+
+.employee .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E8E8F0;
+  margin: 0 auto 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.role {
+  font-size: 12px;
+  color: #777;
+}
+
+.footer {
+  background-color: #F2E9E4;
+  padding: 30px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block {
+  width: 30%;
+}
+
+.footer-block p {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 13px;
+}
+
+/* ================= МОДАЛКА ================= */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.visible {
+  display: flex;
+}
+
+.modal-content {
+  background: #f2f2f2;
+  padding: 30px;
+  border-radius: 8px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.modal-content input, .modal-content button {
+  padding: 10px;
+  background: #d9d9d9;
+  border: none;
+  font-size: 14px;
+}
+
+.modal-content button {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ================= ТАБЛИЦА И КНОПКИ ================= */
+.table-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+/* Таблица */
+.styled-table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 18px;
+  border: 2px solid #f2e9e4; /* ✅ контур вокруг таблицы */
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #e0dcd7;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.styled-table thead tr {
+  background-color: #f2e9e4;
+  font-weight: bold;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f7f6f2;
+}
+
+/* Кнопки справа */
+.table-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Стили кнопок */
+.table-buttons a {
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  background-color: #f2e9e4;
+  border: 2px solid #e0dcd7;
+  color: #444;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.table-buttons a:hover {
+  background-color: #e0dcd7;
+  transform: scale(1.05);
+}

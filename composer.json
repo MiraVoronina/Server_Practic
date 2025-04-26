@@ -1,0 +1,28 @@
+{
+    "name": "mira/vdagyif-m5",
+    "description": "simple mvc freamework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mira",
+            "email": "voroninaslava23@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "illuminate/database": "10.x-dev",
+        "illuminate/events": "10.x-dev",
+        "nikic/fast-route": "^2.0@dev"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "Controller\\": "app/Controller/",
+            "Model\\": "app/Model/",
+            "Middlewares\\": "app/Middlewares/"
+        }
+    }
+}
