@@ -1,6 +1,7 @@
 <h2 class="page-title">Редактировать сотрудника</h2>
 <div class="form-wrapper form-style">
     <form method="post" action="<?= app()->route->getUrl('/employees/edit') ?>">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
         <label>ID сотрудника: <input type="number" name="id" required></label>
         <label>Новое имя: <input type="text" name="first_name"></label>
         <label>Новая фамилия: <input type="text" name="last_name"></label>

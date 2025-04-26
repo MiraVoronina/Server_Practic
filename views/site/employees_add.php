@@ -1,6 +1,7 @@
 <h2 class="page-title">Добавить сотрудника</h2>
 <div class="form-wrapper form-style">
     <form method="post" action="<?= app()->route->getUrl('/employees/add') ?>">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
         <label>Фамилия: <input type="text" name="last_name" required></label>
         <label>Имя: <input type="text" name="first_name" required></label>
         <label>Отчество: <input type="text" name="middle_name" required></label>

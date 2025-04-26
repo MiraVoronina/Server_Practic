@@ -18,6 +18,8 @@ return [
     'auth' => \Middlewares\AuthMiddleware::class,
     'role' => \Middlewares\RoleMiddleware::class,
     'sanitize' => \Middlewares\SanitizeMiddleware::class,
-],
+        'csrf' => \Middlewares\CSRFMiddleware::class,
+
+    ],
 
 ];

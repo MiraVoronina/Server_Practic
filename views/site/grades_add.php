@@ -2,6 +2,8 @@
 
 <div class="form-wrapper">
     <form method="post" action="<?= app()->route->getUrl('/grades/add') ?>" class="form-style">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
+
         <label>Schedule ID:
             <input type="number" name="schedule_id" required>
         </label>

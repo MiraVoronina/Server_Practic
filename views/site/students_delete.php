@@ -2,6 +2,8 @@
 
 <div class="form-wrapper">
     <form method="post" action="<?= app()->route->getUrl('/students/delete') ?>" class="form-style">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
+
         <label>ID студента для удаления:
             <input type="number" name="id" required>
         </label>

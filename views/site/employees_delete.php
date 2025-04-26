@@ -1,6 +1,7 @@
 <h2 class="page-title">Удалить сотрудника</h2>
 <div class="form-wrapper form-style">
     <form method="post" action="<?= app()->route->getUrl('/employees/delete') ?>">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
         <label>ID сотрудника: <input type="number" name="id" required></label>
         <button type="submit">Удалить</button>
     </form>

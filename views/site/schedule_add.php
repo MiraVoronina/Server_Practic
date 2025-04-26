@@ -2,6 +2,8 @@
 
 <div class="form-wrapper">
     <form method="post" action="<?= app()->route->getUrl('/schedule/add') ?>" class="form-style">
+        <input type="hidden" name="csrf_token" value="<?= \Src\Auth\Auth::generateCSRF() ?>">
+
         <label>Дата:
             <input type="date" name="date" required>
         </label>
