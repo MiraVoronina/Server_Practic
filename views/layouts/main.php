@@ -11,7 +11,7 @@
 
 <header class="header">
     <div class="logo">
-        <img src="/logo.png" alt="Логотип">
+        <img src="/img/logo.svg" alt="Логотип" style="width:40px; height:40px; vertical-align:middle;">
     </div>
     <nav>
         <ul class="nav-menu">
@@ -30,8 +30,6 @@
 </header>
 
 <main>
-    <?php if (!app()->auth::check()): ?>
-    <?php endif; ?>
     <?= $content ?? '<p style="color:red">Контент не найден</p>' ?>
 </main>
 

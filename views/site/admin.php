@@ -20,7 +20,7 @@
                     <td><?= $employee->first_name ?></td>
                     <td><?= $employee->middle_name ?></td>
                     <td><?= $employee->phone ?></td>
-                    <td><?= $employee->position_id ?></td>
+                    <td><?= $employee->position_name ?></td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>

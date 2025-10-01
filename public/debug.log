@@ -35649,3 +35649,3328 @@ Route Info: FastRoute\Dispatcher\Result\NotMatched Object
 )
 
 NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /project/
+Clean URI: /project/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /project/
+Clean URI: /project/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /grades
+Clean URI: /grades
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => grades
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /grades
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /grades
+Clean URI: /grades
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => grades
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /grades
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /logout
+Clean URI: /logout
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => logout
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /logout
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /logout
+Clean URI: /logout
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => logout
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /logout
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /grades
+Clean URI: /grades
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => grades
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /grades
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /schedule
+Clean URI: /schedule
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => schedule
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /schedule
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /grades
+Clean URI: /grades
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => grades
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /grades
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /logout
+Clean URI: /logout
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => logout
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /logout
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/logo.png
+Clean URI: /img/logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/employee.png
+Clean URI: /img/employee.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/dekan.png
+Clean URI: /img/dekan.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/dekan.png
+Clean URI: /img/dekan.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/employee.png
+Clean URI: /img/employee.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/logo.png
+Clean URI: /img/logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/dekan.png
+Clean URI: /img/dekan.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/employee.png
+Clean URI: /img/employee.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/logo.png
+Clean URI: /img/logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/employee.png
+Clean URI: /img/employee.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/dekan.png
+Clean URI: /img/dekan.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /img/logo.png
+Clean URI: /img/logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /logo.png
+Clean URI: /logo.png
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /employees
+Clean URI: /employees
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => employees
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /employees
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND

@@ -11,11 +11,11 @@
                 </div>
                 <div>
                     <strong>Email</strong><br/>
-                    exampleEmae@mail.ru
+                    <a href="mailto:exampleEmae@mail.ru">exampleEmae@mail.ru</a>
                 </div>
                 <div>
                     <strong>Email</strong><br/>
-                    example@mail.ru
+                    <a href="mailto:example@mail.ru">example@mail.ru</a>
                 </div>
                 <div>
                     <strong>Адрес</strong><br/>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="dekan-photo">
-            <div class="image rectangle"></div>
+            <img src="/img/dekan.jpg" alt="Фото декана" class="image rectangle"/>
         </div>
     </div>
 </section>
@@ -33,23 +33,22 @@
     <h2>Сотрудники</h2>
     <div class="employees-list">
         <div class="employee">
-            <div class="image circle"></div>
+            <img src="/img/employee.jpg" alt="Фото сотрудника" class="image circle"/>
             <p class="name">Фамилия И.О.</p>
             <p class="role">заместитель декана</p>
         </div>
         <div class="employee">
-            <div class="image circle"></div>
+            <img src="/img/employee.jpg" alt="Фото сотрудника" class="image circle"/>
             <p class="name">Фамилия И.О.</p>
             <p class="role">методист</p>
         </div>
         <div class="employee">
-            <div class="image circle"></div>
+            <img src="/img/employee.jpg" alt="Фото сотрудника" class="image circle"/>
             <p class="name">Фамилия И.О.</p>
             <p class="role">администратор</p>
         </div>
     </div>
 </section>
-
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-block">

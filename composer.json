@@ -14,7 +14,8 @@
         "php": "^7.4 | ^8.0",
         "illuminate/database": "10.x-dev",
         "illuminate/events": "10.x-dev",
-        "nikic/fast-route": "^2.0@dev"
+        "nikic/fast-route": "^2.0@dev",
+        "miravoronina/collect-php-": "dev-main"
 
     },
     "autoload": {
@@ -24,5 +25,11 @@
             "Model\\": "app/Model/",
             "Middlewares\\": "app/Middlewares/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/MiraVoronina/collect-PHP-"
+        }
+    ]
 }
