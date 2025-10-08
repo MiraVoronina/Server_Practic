@@ -38974,3 +38974,353 @@ Route Info: FastRoute\Dispatcher\Result\NotMatched Object
 )
 
 NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /practic/
+Clean URI: /practic/
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /logout
+Clean URI: /logout
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => logout
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /logout
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /login
+Clean URI: /login
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => login
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /login
+        )
+
+)
+
+Method: GET, URI: /home
+Clean URI: /home
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => home
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /home
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
