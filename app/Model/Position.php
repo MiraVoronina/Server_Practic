@@ -1,18 +1,16 @@
 <?php
-// app/Model/Position.php
-class Position {
-    private $conn;
-    private $table_name = "positions";
 
-    public function __construct($db) {
-        $this->conn = $db;
-    }
+namespace Model;
 
-    public function getAll() {
-        $query = "SELECT * FROM " . $this->table_name;
-        $stmt = $this->conn->prepare($query);
-        $stmt->execute();
-        return $stmt;
-    }
+use Illuminate\Database\Eloquent\Model;
+
+class Position extends Model
+{
+    public $timestamps = false;
+
+    protected $table = 'positions';
+
+    protected $fillable = [
+        'name'
+    ];
 }
-?>

@@ -17,18 +17,16 @@ class User extends Model implements IdentityInterface
         'last_name',
         'first_name',
         'middle_name',
+        'phone',
         'login',
         'password',
         'position_id',
         'role'
     ];
 
-    protected static function booted()
-    {
-        static::creating(function ($user) {
-            $user->password = md5($user->password);
-        });
-    }
+    protected $hidden = [
+        'password'
+    ];
 
     public function findIdentity(int $id)
     {
@@ -42,14 +40,25 @@ class User extends Model implements IdentityInterface
 
     public function attemptIdentity(array $credentials)
     {
-        return self::where([
-            'login' => $credentials['login'],
-            'password' => md5($credentials['password']),
-        ])->first();
-    }
+        // Получаем логин и пароль
+        $login = $credentials['email'] ?? $credentials['login'] ?? null;
+        $password = $credentials['password'] ?? null;
 
-    public function getRoleAttribute(): ?string
-    {
-        return $this->attributes['role'] ?? null;
+        if (!$login || !$password) {
+            return null;
+        }
+
+        // Ищем пользователя по логину
+        $user = self::where('login', $login)->first();
+
+        if (!$user) {
+            return null;
+        }
+
+        if (password_verify($password, $user->password)) {
+            return $user;
+        }
+
+        return null;
     }
 }

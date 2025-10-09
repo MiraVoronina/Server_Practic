@@ -7,7 +7,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 try {
+
     $app = require_once __DIR__ . '/../core/bootstrap.php';
+
     $app->run();
 } catch (\Throwable $exception) {
     echo '<pre>';

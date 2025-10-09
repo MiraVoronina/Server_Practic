@@ -34,28 +34,8 @@ class EmployeeController
 
     // Метод для получения всех сотрудников
     public function getAllEmployees() {
-        $employees = $this->employee->getAll(); // Получаем всех сотрудников из базы данных
-        // Преобразуем данные в формат JSON и выводим
+        $employees = $this->employee->getAll();
         echo new View($employees->fetchAll(PDO::FETCH_ASSOC));
-    }
-
-    // Метод для добавления нового сотрудника
-    public function createEmployee($data) {
-        // Получаем данные из запроса и передаем их в модель для добавления в базу данных
-        $result = $this->employee->create(
-            $data['first_name'],
-            $data['last_name'],
-            $data['middle_name'],
-            $data['login'],
-            $data['password'],
-            $data['phone'],
-            $data['position_id']
-        );
-        if ($result) {
-            echo new View(["message" => "Employee added successfully"]);
-        } else {
-            echo new View(["message" => "Failed to add employee"]);
-        }
     }
 }
 ?>

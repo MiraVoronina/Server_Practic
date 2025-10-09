@@ -4,14 +4,14 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Src\Auth\Auth;
-use Model\User;
+use Model\Employee;
 
 $capsule = new Capsule;
 $capsule->addConnection(include __DIR__ . '/../config/db.php');
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
 
-Auth::init(new User);
+Auth::init(new Employee);
 
 const DIR_CONFIG = '/../config';
 function getConfigs(string $path = DIR_CONFIG): array {

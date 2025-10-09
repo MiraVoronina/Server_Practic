@@ -11,6 +11,7 @@ use Model\Performance;
 use Model\Employee;
 use Model\Discipline;
 use Model\Group;
+use Model\Position;
 
 class Site
 {
@@ -39,7 +40,7 @@ class Site
     public function logout(): void
     {
         Auth::logout();
-        app()->route->redirect('/home');
+        app()->route->redirect('/');
     }
 
     public function hello(Request $request): string
@@ -98,23 +99,193 @@ class Site
     public function addSchedule(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
+
         if ($request->method === 'POST') {
-            \Model\Schedule::create($request->all());
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'date' => ['required'],
+                'discipline_id' => ['required', 'numeric'],
+                'classroom' => ['required', 'min:1'],
+                'employee_id' => ['required', 'numeric'],
+                'group_id' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                return (new View())->render('site.schedule_add', [
+                    'errors' => $validator->errors(),
+                    'old' => $data,
+                    'disciplines' => Discipline::all(),
+                    'employees' => Employee::all(),
+                    'groups' => Group::all()
+                ]);
+            }
+
+            Schedule::create($data);
             app()->route->redirect('/schedule');
         }
-        return (new View())->render('site.schedule_add');
+
+        return (new View())->render('site.schedule_add', [
+            'disciplines' => Discipline::all(),
+            'employees' => Employee::all(),
+            'groups' => Group::all()
+        ]);
     }
 
     public function editSchedule(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.schedule_edit');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.schedule_edit', [
+                    'schedule' => Schedule::all(),
+                    'scheduleItem' => null,
+                    'disciplines' => Discipline::all(),
+                    'employees' => Employee::all(),
+                    'groups' => Group::all()
+                ]);
+            }
+
+            $scheduleItem = Schedule::find($id);
+
+            if (!$scheduleItem) {
+                return '<h2 style="text-align:center; margin-top:50px;">Расписание не найдено</h2>';
+            }
+
+            return (new View())->render('site.schedule_edit', [
+                'schedule' => Schedule::all(),
+                'scheduleItem' => $scheduleItem,
+                'disciplines' => Discipline::all(),
+                'employees' => Employee::all(),
+                'groups' => Group::all()
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+                'date' => ['required'],
+                'discipline_id' => ['required', 'numeric'],
+                'classroom' => ['required', 'min:1'],
+                'employee_id' => ['required', 'numeric'],
+                'group_id' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                $scheduleItem = Schedule::find($data['id'] ?? null);
+                return (new View())->render('site.schedule_edit', [
+                    'schedule' => Schedule::all(),
+                    'scheduleItem' => $scheduleItem,
+                    'disciplines' => Discipline::all(),
+                    'employees' => Employee::all(),
+                    'groups' => Group::all(),
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $scheduleItem = Schedule::find($data['id']);
+
+            if ($scheduleItem) {
+                $scheduleItem->update([
+                    'date' => $data['date'],
+                    'discipline_id' => $data['discipline_id'],
+                    'classroom' => $data['classroom'],
+                    'employee_id' => $data['employee_id'],
+                    'group_id' => $data['group_id']
+                ]);
+
+                app()->route->redirect('/schedule');
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Расписание не найдено</h2>';
+            }
+        }
+
+        return '';
     }
 
     public function deleteSchedule(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.schedule_delete');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.schedule_delete', [
+                    'schedule' => Schedule::all(),
+                    'scheduleItem' => null,
+                    'disciplines' => Discipline::all(),
+                    'employees' => Employee::all(),
+                    'groups' => Group::all()
+                ]);
+            }
+
+            $scheduleItem = Schedule::find($id);
+
+            if (!$scheduleItem) {
+                return '<h2 style="text-align:center; margin-top:50px;">Расписание не найдено</h2>';
+            }
+
+            return (new View())->render('site.schedule_delete', [
+                'schedule' => Schedule::all(),
+                'scheduleItem' => $scheduleItem,
+                'disciplines' => Discipline::all(),
+                'employees' => Employee::all(),
+                'groups' => Group::all()
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                return (new View())->render('site.schedule_delete', [
+                    'schedule' => Schedule::all(),
+                    'scheduleItem' => null,
+                    'disciplines' => Discipline::all(),
+                    'employees' => Employee::all(),
+                    'groups' => Group::all(),
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $scheduleItem = Schedule::find($data['id']);
+
+            if ($scheduleItem) {
+                try {
+                    // Удаляем связанные записи если есть
+                    \Illuminate\Database\Capsule\Manager::table('attendance')
+                        ->where('schedule_id', $scheduleItem->id)
+                        ->delete();
+
+                    $scheduleItem->delete();
+
+                    app()->route->redirect('/schedule');
+                } catch (\Exception $e) {
+                    return (new View())->render('site.schedule_delete', [
+                        'schedule' => Schedule::all(),
+                        'scheduleItem' => $scheduleItem,
+                        'disciplines' => Discipline::all(),
+                        'employees' => Employee::all(),
+                        'groups' => Group::all(),
+                        'errors' => ['general' => ['Ошибка при удалении: ' . $e->getMessage()]]
+                    ]);
+                }
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Расписание не найдено</h2>';
+            }
+        }
+
+        return '';
     }
 
     public function addStudent(Request $request): string
@@ -294,22 +465,179 @@ class Site
     public function addGrade(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
+
         if ($request->method === 'POST') {
-            \Model\Performance::create($request->all());
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'schedule_id' => ['required', 'numeric'],
+                'student_id' => ['required', 'numeric'],
+                'type' => ['required'],
+                'grade' => ['required', 'numeric'],
+                'hours' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                return (new View())->render('site.grades_add', [
+                    'errors' => $validator->errors(),
+                    'old' => $data,
+                    'schedule' => Schedule::all(),
+                    'students' => Student::all()
+                ]);
+            }
+
+            Performance::create($data);
             app()->route->redirect('/grades');
         }
-        return (new View())->render('site.grades_add');
+
+        return (new View())->render('site.grades_add', [
+            'schedule' => Schedule::all(),
+            'students' => Student::all()
+        ]);
     }
 
     public function editGrade(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.grades_edit');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.grades_edit', [
+                    'grades' => Performance::all(),
+                    'gradeItem' => null,
+                    'schedule' => Schedule::all(),
+                    'students' => Student::all()
+                ]);
+            }
+
+            $gradeItem = Performance::find($id);
+
+            if (!$gradeItem) {
+                return '<h2 style="text-align:center; margin-top:50px;">Оценка не найдена</h2>';
+            }
+
+            return (new View())->render('site.grades_edit', [
+                'grades' => Performance::all(),
+                'gradeItem' => $gradeItem,
+                'schedule' => Schedule::all(),
+                'students' => Student::all()
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+                'schedule_id' => ['required', 'numeric'],
+                'student_id' => ['required', 'numeric'],
+                'type' => ['required'],
+                'grade' => ['required', 'numeric'],
+                'hours' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                $gradeItem = Performance::find($data['id'] ?? null);
+                return (new View())->render('site.grades_edit', [
+                    'grades' => Performance::all(),
+                    'gradeItem' => $gradeItem,
+                    'schedule' => Schedule::all(),
+                    'students' => Student::all(),
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $gradeItem = Performance::find($data['id']);
+
+            if ($gradeItem) {
+                $gradeItem->update([
+                    'schedule_id' => $data['schedule_id'],
+                    'student_id' => $data['student_id'],
+                    'type' => $data['type'],
+                    'grade' => $data['grade'],
+                    'hours' => $data['hours']
+                ]);
+
+                app()->route->redirect('/grades');
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Оценка не найдена</h2>';
+            }
+        }
+
+        return '';
     }
 
     public function deleteGrade(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.grades_delete');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.grades_delete', [
+                    'grades' => Performance::all(),
+                    'gradeItem' => null,
+                    'schedule' => Schedule::all(),
+                    'students' => Student::all()
+                ]);
+            }
+
+            $gradeItem = Performance::find($id);
+
+            if (!$gradeItem) {
+                return '<h2 style="text-align:center; margin-top:50px;">Оценка не найдена</h2>';
+            }
+
+            return (new View())->render('site.grades_delete', [
+                'grades' => Performance::all(),
+                'gradeItem' => $gradeItem,
+                'schedule' => Schedule::all(),
+                'students' => Student::all()
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                return (new View())->render('site.grades_delete', [
+                    'grades' => Performance::all(),
+                    'gradeItem' => null,
+                    'schedule' => Schedule::all(),
+                    'students' => Student::all(),
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $gradeItem = Performance::find($data['id']);
+
+            if ($gradeItem) {
+                try {
+                    $gradeItem->delete();
+                    app()->route->redirect('/grades');
+                } catch (\Exception $e) {
+                    return (new View())->render('site.grades_delete', [
+                        'grades' => Performance::all(),
+                        'gradeItem' => $gradeItem,
+                        'schedule' => Schedule::all(),
+                        'students' => Student::all(),
+                        'errors' => ['general' => ['Ошибка при удалении: ' . $e->getMessage()]]
+                    ]);
+                }
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Оценка не найдена</h2>';
+            }
+        }
+
+        return '';
     }
+
+
 }
