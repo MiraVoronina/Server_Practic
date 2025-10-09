@@ -20,14 +20,12 @@ class Route
 
     public static function add(array|string $httpMethod, string $route, array $action): self
     {
-        // Приводим одиночное значение к массиву
         $methods = is_array($httpMethod) ? $httpMethod : [$httpMethod];
 
         foreach ($methods as $method) {
             self::single()->routeCollector->addRoute($method, $route, $action);
         }
 
-        // Сохраняем только один метод (первый), для логики middleware
         self::single()->currentHttpMethod = $methods[0];
         self::single()->currentRoute = $route;
 
@@ -102,8 +100,7 @@ class Route
             case Dispatcher::METHOD_NOT_ALLOWED:
                 throw new Error('METHOD_NOT_ALLOWED');
             case Dispatcher::FOUND:
-                $handler = $routeInfo[1];  // СНАЧАЛА присваиваем
-                #echo "<h4>Маршрут найден: {$handler[0]}::{$handler[1]}</h4>";  // ПОТОМ выводим
+                $handler = $routeInfo[1];
 
                 $vars = array_values($routeInfo[2]);
                 $vars[] = Middleware::single()->runMiddlewares($httpMethod, $uri);

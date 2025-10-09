@@ -122,39 +122,173 @@ class Site
         if ($request->method === 'POST') {
             $data = $request->all();
 
-            $validator = new \Src\Validator($data, [
-                'last_name' => ['required'],
-                'first_name' => ['required'],
-                'middle_name' => ['required'],
-                'group_id' => ['required'],
-                'address' => ['required'],
+            $validator = new \Src\Validator\Validator($data, [
+                'last_name' => ['required', 'min:2', 'max:100'],
+                'first_name' => ['required', 'min:2', 'max:100'],
+                'middle_name' => ['required', 'min:2', 'max:100'],
+                'group_id' => ['required', 'numeric'],
+                'address' => ['required', 'min:5'],
                 'status' => ['required'],
             ]);
 
-            if (!$validator->passes()) {
+            if ($validator->fails()) {
                 return (new View())->render('site.students_add', [
-                    'errors' => $validator->errors()
+                    'errors' => $validator->errors(),
+                    'old' => $data,
+                    'groups' => Group::all()
                 ]);
             }
 
-            \Model\Student::create($data);
+            Student::create($data);
             app()->route->redirect('/students');
         }
 
-        return (new View())->render('site.students_add');
+        return (new View())->render('site.students_add', [
+            'groups' => Group::all()
+        ]);
     }
-
 
     public function editStudent(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.students_edit');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.students_edit', [
+                    'students' => Student::all(),
+                    'student' => null,
+                    'groups' => Group::all()
+                ]);
+            }
+
+            $student = Student::find($id);
+
+            if (!$student) {
+                return '<h2 style="text-align:center; margin-top:50px;">Студент не найден</h2>';
+            }
+
+            return (new View())->render('site.students_edit', [
+                'students' => Student::all(),
+                'student' => $student,
+                'groups' => Group::all()
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+                'last_name' => ['required', 'min:2', 'max:100'],
+                'first_name' => ['required', 'min:2', 'max:100'],
+                'middle_name' => ['required', 'min:2', 'max:100'],
+                'group_id' => ['required', 'numeric'],
+                'address' => ['required', 'min:5'],
+                'status' => ['required'],
+            ]);
+
+            if ($validator->fails()) {
+                $student = Student::find($data['id'] ?? null);
+                return (new View())->render('site.students_edit', [
+                    'students' => Student::all(),
+                    'student' => $student,
+                    'groups' => Group::all(),
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $student = Student::find($data['id']);
+
+            if ($student) {
+                $student->update([
+                    'last_name' => $data['last_name'],
+                    'first_name' => $data['first_name'],
+                    'middle_name' => $data['middle_name'],
+                    'address' => $data['address'],
+                    'group_id' => $data['group_id'],
+                    'status' => $data['status']
+                ]);
+
+                app()->route->redirect('/students');
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Студент не найден</h2>';
+            }
+        }
+
+        return '';
     }
 
     public function deleteStudent(Request $request): string
     {
         if (!$this->denyIfNotDeanery()) return '';
-        return (new View())->render('site.students_delete');
+
+        if ($request->method === 'GET') {
+            $id = $request->get('id');
+
+            if (!$id) {
+                return (new View())->render('site.students_delete', [
+                    'students' => Student::all(),
+                    'student' => null
+                ]);
+            }
+
+            $student = Student::find($id);
+
+            if (!$student) {
+                return '<h2 style="text-align:center; margin-top:50px;">Студент не найден</h2>';
+            }
+
+            return (new View())->render('site.students_delete', [
+                'students' => Student::all(),
+                'student' => $student
+            ]);
+        }
+
+        if ($request->method === 'POST') {
+            $data = $request->all();
+
+            $validator = new \Src\Validator\Validator($data, [
+                'id' => ['required', 'numeric'],
+            ]);
+
+            if ($validator->fails()) {
+                return (new View())->render('site.students_delete', [
+                    'students' => Student::all(),
+                    'student' => null,
+                    'errors' => $validator->errors()
+                ]);
+            }
+
+            $student = Student::find($data['id']);
+
+            if ($student) {
+                try {
+                    \Illuminate\Database\Capsule\Manager::table('attendance')
+                        ->where('student_id', $student->id)
+                        ->delete();
+
+                    \Illuminate\Database\Capsule\Manager::table('performance')
+                        ->where('student_id', $student->id)
+                        ->delete();
+
+                    $student->delete();
+
+                    app()->route->redirect('/students');
+                } catch (\Exception $e) {
+                    return (new View())->render('site.students_delete', [
+                        'students' => Student::all(),
+                        'student' => $student,
+                        'errors' => ['general' => ['Ошибка при удалении: ' . $e->getMessage()]]
+                    ]);
+                }
+            } else {
+                return '<h2 style="text-align:center; margin-top:50px;">Студент не найден</h2>';
+            }
+        }
+
+        return '';
     }
 
     public function addGrade(Request $request): string

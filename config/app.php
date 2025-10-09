@@ -17,4 +17,11 @@ return [
             'unique'   => \Validators\UniqueValidator::class,
         ],
     ],
+    'validators' => [
+        'required' => \Src\Validator\Rules\RequiredRule::class,
+        'min' => \Src\Validator\Rules\MinRule::class,
+        'max' => \Src\Validator\Rules\MaxRule::class,
+        'numeric' => \Src\Validator\Rules\NumericRule::class,
+        'email' => \Src\Validator\Rules\EmailRule::class,
+    ],
 ];

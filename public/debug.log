@@ -39324,3 +39324,1865 @@ Route Info: FastRoute\Dispatcher\Result\NotMatched Object
 )
 
 NOT_FOUND
+Method: GET, URI: /
+Clean URI: /
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => index
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=1
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete?id=1
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete?id=1
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=13
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=13
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete?id=13
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/add
+Clean URI: /students/add
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => addStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/add
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/edit?id=14
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/edit
+Clean URI: /students/edit
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => editStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/edit
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: GET, URI: /students/delete?id=14
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND
+Method: POST, URI: /students/delete
+Clean URI: /students/delete
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => deleteStudent
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students/delete
+        )
+
+)
+
+Method: GET, URI: /students
+Clean URI: /students
+Route Info: FastRoute\Dispatcher\Result\Matched Object
+(
+    [handler] => Array
+        (
+            [0] => Controller\Site
+            [1] => students
+        )
+
+    [variables] => Array
+        (
+        )
+
+    [extraParameters] => Array
+        (
+            [_route] => /students
+        )
+
+)
+
+Method: GET, URI: /favicon.ico
+Clean URI: /favicon.ico
+Route Info: FastRoute\Dispatcher\Result\NotMatched Object
+(
+)
+
+NOT_FOUND

@@ -17,4 +17,6 @@ class Student extends Model
         'address',
         'status'
     ];
+
+
 }
