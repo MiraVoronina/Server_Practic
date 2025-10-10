@@ -27,7 +27,7 @@
         </label>
 
         <label>Телефон:
-            <input type="text" name="phone" value="<?= $old['phone'] ?? '' ?>" placeholder="+7 (XXX) XXX-XX-XX" required>
+            <input type="text" name="phone"  maxlength="11" value="<?= $old['phone'] ?? '' ?>" placeholder="+7 (XXX) XXX-XX-XX" required>
         </label>
 
         <label>Логин:

@@ -22,11 +22,21 @@ class Site
 
     public function login(Request $request): string
     {
-        if ($request->method === 'POST' && Auth::attempt($request->all())) {
-            app()->route->redirect('/home');
+        if ($request->method === 'POST') {
+            try {
+                $result = Auth::attempt($request->all());
+                if ($result === true) {
+                    app()->route->redirect('/home');
+                }
+            } catch (\Exception $e) {
+            }
+
+            return (new View())->render('site.index', [
+                'login_error' => 'Неправильный логин или пароль'
+            ]);
         }
 
-        return '<h2 style="text-align:center; margin-top:50px;">Необходима авторизация</h2>';
+        return (new View())->render('site.index');
     }
 
     public function signup(Request $request): string
@@ -262,7 +272,6 @@ class Site
 
             if ($scheduleItem) {
                 try {
-                    // Удаляем связанные записи если есть
                     \Illuminate\Database\Capsule\Manager::table('attendance')
                         ->where('schedule_id', $scheduleItem->id)
                         ->delete();
@@ -638,6 +647,4 @@ class Site
 
         return '';
     }
-
-
 }

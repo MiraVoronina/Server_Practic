@@ -48,8 +48,8 @@
             <select name="status" required>
                 <option value="">-- Выберите статус --</option>
                 <option value="studying" <?= (($old['status'] ?? '') === 'studying') ? 'selected' : '' ?>>Учится</option>
-                <option value="dismissed" <?= (($old['status'] ?? '') === 'dismissed') ? 'selected' : '' ?>>Отчислен</option>
-                <option value="academic_leave" <?= (($old['status'] ?? '') === 'academic_leave') ? 'selected' : '' ?>>Академический отпуск</option>
+                <option value="expelled" <?= (($old['status'] ?? '') === 'expelled') ? 'selected' : '' ?>>Отчислен</option>
+                <option value="academic" <?= (($old['status'] ?? '') === 'academic') ? 'selected' : '' ?>>Академический отпуск</option>
             </select>
         </label>
 

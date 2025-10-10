@@ -45,7 +45,7 @@
             </label>
 
             <label>Телефон:
-                <input type="text" name="phone" value="<?= htmlspecialchars($employee->phone) ?>" required>
+                <input type="text" maxlength="11" name="phone" value="<?= htmlspecialchars($employee->phone) ?>" required>
             </label>
 
             <label>Логин:

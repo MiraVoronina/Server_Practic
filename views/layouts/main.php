@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="/styles.css">
     <script src="/sort-table.js" defer></script>
     <script src="/Modal.js" defer></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal.visible {
+            display: flex !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -34,9 +51,16 @@
 </main>
 
 <?php if (!app()->auth::check()): ?>
-    <div id="modal-login" class="modal" style=" position:fixed; z-index:1000; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+    <div id="modal-login" class="modal <?= isset($login_error) ? 'visible' : '' ?>">
         <div class="modal-content" style="background:white; padding:20px; border-radius:5px; max-width:400px; width:100%;">
             <span class="close-modal" style="cursor:pointer; float:right;">&times;</span>
+
+            <?php if (isset($login_error)): ?>
+                <div style="background:#ffe6e6; border-left:4px solid #ff4444; padding:10px; margin-bottom:15px; color:#721c24; clear:both;">
+                    ⚠️ <?= htmlspecialchars($login_error) ?>
+                </div>
+            <?php endif; ?>
+
             <form method="post" action="<?= app()->route->getUrl('/login') ?>">
                 <label>Логин <input type="text" name="login" required></label><br>
                 <label>Пароль <input type="password" name="password" required></label><br>

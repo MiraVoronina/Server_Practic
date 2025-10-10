@@ -17,7 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 modal.classList.remove("visible");
             }
         });
-    } else {
-        console.warn("❗ Один из элементов модалки не найден:", { modal, openBtn, closeBtn });
     }
 });

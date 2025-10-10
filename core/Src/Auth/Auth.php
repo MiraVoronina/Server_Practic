@@ -5,7 +5,6 @@ namespace Src\Auth;
 use Src\Session;
 
 class Auth
-
 {
     private static IdentityInterface|null $model = null;
 
@@ -21,39 +20,11 @@ class Auth
 
     public static function attempt(array $credentials): bool
     {
-        echo "<h3>ОТЛАДКА Auth::attempt</h3>";
-        echo "<pre>";
-        echo "Model инициализирована: " . (self::$model ? 'ДА' : 'НЕТ') . "\n";
-
-        if (self::$model) {
-            echo "Класс модели: " . get_class(self::$model) . "\n";
-        } else {
-            echo "<p style='color: red;'>КРИТИЧЕСКАЯ ОШИБКА: Auth модель не инициализирована!</p>";
-            die();
-        }
-
-        echo "\nПереданные credentials:\n";
-        print_r($credentials);
-        echo "</pre>";
-
         if (!self::$model) {
             return false;
         }
 
-        echo "<p>Вызываем attemptIdentity на модели " . get_class(self::$model) . "...</p>";
-
         $user = self::$model->attemptIdentity($credentials);
-
-        echo "<pre>";
-        echo "Результат attemptIdentity:\n";
-        if ($user) {
-            echo "ТИП: " . get_class($user) . "\n";
-            echo "ID: " . $user->getId() . "\n";
-            var_dump($user);
-        } else {
-            echo "NULL - пользователь не найден или пароль неверный\n";
-        }
-        echo "</pre>";
 
         if ($user) {
             self::login($user);
@@ -81,11 +52,11 @@ class Auth
         Session::clear('id');
         return true;
     }
+
     public static function generateCSRF(): string
     {
         $token = md5(time());
         \Src\Session::set('csrf_token', $token);
         return $token;
     }
-
 }
