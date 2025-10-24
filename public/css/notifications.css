@@ -1,0 +1,136 @@
+.notifications-section {
+    padding: 40px 20px;
+    min-height: 60vh;
+}
+
+.notifications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.notifications-header h1 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.btn-mark-all {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-mark-all:hover {
+    background: #2980b9;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification-item {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.notification-item.unread {
+    border-left: 4px solid #3498db;
+    background: #f8f9fa;
+}
+
+.notification-item.read {
+    opacity: 0.7;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.notification-header h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.notification-date {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.notification-message {
+    color: #34495e;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.notification-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-view-order {
+    padding: 8px 16px;
+    background: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-view-order:hover {
+    background: #229954;
+}
+
+.btn-mark-read {
+    padding: 8px 16px;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-mark-read:hover {
+    background: #7f8c8d;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.empty-state p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

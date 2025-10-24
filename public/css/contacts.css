@@ -1,0 +1,82 @@
+/* Contacts Hero */
+.contacts-hero {
+    background: #f0f8ed;
+    padding: 60px 0;
+}
+
+.contacts-hero .container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.contacts-hero .hero-title {
+    color: #2c2e47;
+    font: 700 42px Manrope, sans-serif;
+    margin-bottom: 16px;
+}
+
+.contacts-hero .hero-description {
+    color: #868686;
+    font: 400 18px/1.8 DM Sans, sans-serif;
+    max-width: 700px;
+}
+
+/* Contacts Main */
+.contacts-main {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.contacts-main .container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.contacts-layout {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact-block {
+    background: #f0f8ed;
+    padding: 28px;
+    border-radius: 12px;
+    border-left: 4px solid #5bb543;
+}
+
+.contact-block h3 {
+    color: #2c2e47;
+    font: 600 18px Manrope, sans-serif;
+    margin-bottom: 10px;
+}
+
+.contact-block p {
+    color: #868686;
+    font: 400 16px/1.6 DM Sans, sans-serif;
+    margin: 0;
+}
+
+.contact-block p + p {
+    margin-top: 4px;
+}
+
+.contacts-map {
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #f0f8ed;
+}
+
+.contacts-map iframe {
+    width: 100%;
+    height: 100%;
+}

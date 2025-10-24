@@ -1,0 +1,126 @@
+/* Services Hero */
+.services-hero {
+    background: #f0f8ed;
+    padding: 100px 0;
+}
+
+.services-hero .container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.services-hero .hero-title {
+    color: #2c2e47;
+    font: 700 48px Manrope, sans-serif;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.services-hero .hero-description {
+    color: #868686;
+    font: 400 18px/1.8 DM Sans, sans-serif;
+    max-width: 800px;
+}
+
+/* Services List */
+.services-list {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.services-list .container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.service-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    background: #f0f8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item h3 {
+    color: #2c2e47;
+    font: 600 20px Manrope, sans-serif;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.service-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.service-item li {
+    color: #868686;
+    font: 400 14px/1.6 DM Sans, sans-serif;
+    padding-left: 20px;
+    position: relative;
+}
+
+.service-item li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #868686;
+}
+
+.service-button {
+    background: #d4ed00;
+    color: #2c2e47;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font: 600 15px DM Sans, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.service-button:hover {
+    background: #c5de00;
+    transform: translateY(-2px);
+}
